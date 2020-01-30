@@ -9,7 +9,7 @@ module.exports = {
 };
 
 async function insert(hobbit) {
-  return null;
+  return db('hobbits').insert(hobbit, "id");
 }
 
 async function update(id, changes) {
@@ -27,3 +27,4 @@ function getAll() {
 function findById(id) {
   return null;
 }
+
